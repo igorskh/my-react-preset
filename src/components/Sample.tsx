@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Child from "./Child";
 
-// import "./Sample.css";
+import "./Sample.css";
 
 type AppProps = {
     title: string,
