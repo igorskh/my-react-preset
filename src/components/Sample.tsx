@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import Child from "./Child";
 
-import "./App.scss";
+import "./Sample.css";
 
 type AppProps = {
     title: string,
     number: number
 }
 
-const App = ({title, number}: AppProps): JSX.Element => {
+const Sample = ({title, number}: AppProps): JSX.Element => {
     const [counter, setCounter] = useState<number>(number);
 
     function changeCounter(diff: number) {
@@ -19,10 +20,12 @@ const App = ({title, number}: AppProps): JSX.Element => {
             <h1>{title}</h1>
             <h2>Count is {counter}</h2>
 
+            <Child text={"test"} />
+
             <button onClick={() => changeCounter(1)}>+1</button>
             <button onClick={() => changeCounter(-1)}>-1</button>
         </div>
     );
 };
 
-export default App;
+export default Sample;
