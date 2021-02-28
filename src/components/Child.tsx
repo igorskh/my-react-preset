@@ -4,7 +4,7 @@ type Props = {
     text: string
 }
 
-const Child = ({text}: Props): JSX.Element => {
+const Child = ({ text }: Props): JSX.Element => {
     return (
         <div>
             <p>{text}</p>

@@ -27,7 +27,7 @@ module.exports = {
             ],
           },
         },
-      },      
+      },
       {
         test: /\.(scss|css)$/,
         use: [
@@ -47,7 +47,7 @@ module.exports = {
   plugins: [
     new ForkTsCheckerWebpackPlugin({
       eslint: {
-        files: "./src/**/*.{ts,tsx,js,jsx}"      
+        files: "./src/**/*.{ts,tsx,js,jsx}"
       }
     }),
     new ESLintPlugin(),
