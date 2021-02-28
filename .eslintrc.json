@@ -6,8 +6,18 @@
     "plugin:react-hooks/recommended"
   ],
   "rules": {
-    "quotes": ["error", "double", { "allowTemplateLiterals": true, "avoidEscape": true }],
-    "semi": ["error", "always"]
+    "quotes": [
+      "error",
+      "double",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
   },
   "parserOptions": {
     "ecmaVersion": 2020,

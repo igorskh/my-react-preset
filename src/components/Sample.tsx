@@ -8,7 +8,7 @@ type AppProps = {
     number: number
 }
 
-const Sample = ({title, number}: AppProps): JSX.Element => {
+const Sample = ({ title, number }: AppProps): JSX.Element => {
     const [counter, setCounter] = useState<number>(number);
 
     function changeCounter(diff: number) {
